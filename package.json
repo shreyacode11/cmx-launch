@@ -1,0 +1,25 @@
+{
+  "name": "cmx-internxpert-launch",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "render:16x9": "remotion render src/index.ts Launch16x9 video/launch-16x9.mp4",
+    "render:4x5": "remotion render src/index.ts Launch4x5 video/launch-4x5.mp4",
+    "still": "remotion still src/index.ts Launch16x9 video/thumbnail.png --frame=1450"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.400",
+    "@remotion/captions": "^4.0.400",
+    "@remotion/google-fonts": "^4.0.400",
+    "@remotion/transitions": "^4.0.400",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.400"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
+}
